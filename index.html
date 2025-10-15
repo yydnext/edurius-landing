@@ -3,22 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Edurius — Preview</title>
-  <link rel="icon" href="data:," />
+  <title>Edurius — Product Preview</title>
+  <link rel="icon" href="data:,">
   <style>
-    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:#0f2342;color:#fff}
-    .wrap{max-width:880px;margin:7rem auto;padding:0 24px}
+    :root{--navy:#0f2342;--ink:#0b1016;--sky:#61a0ff;--soft:#e9eef6}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--navy);color:#fff}
+    .wrap{max-width:880px;margin:56px auto;padding:0 24px}
     h1{font-size:40px;margin:0 0 12px}
-    p{line-height:1.6;opacity:.9}
-    a.btn{display:inline-block;margin-top:24px;padding:12px 18px;border-radius:8px;
-          background:#18a0fb;color:#fff;text-decoration:none;font-weight:600}
+    p{line-height:1.6;opacity:.9;margin:0 0 12px}
+    .card{background:#122845;border:1px solid #1b355a;border-radius:12px;padding:20px}
+    .pill{display:inline-block;background:#153257;border:1px solid #274b76;border-radius:999px;padding:6px 10px;margin:0 6px 6px 0;font-size:12px;opacity:.95}
+    .cta{display:inline-block;margin-top:18px;padding:12px 18px;border-radius:8px;background:var(--sky);color:#001428;
+         font-weight:700;text-decoration:none}
+    .footer{margin-top:24px;opacity:.7;font-size:13px}
+    a{color:#a7c7ff}
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Edurius — Product Preview</h1>
-    <p>Funding Gap → Solutions → Apply/Record 흐름의 미리보기 랜딩입니다.<br/>본 서비스는 베타 리뷰용입니다.</p>
-    <a class="btn" href="mailto:ops@edurius.com">Contact Ops</a>
+    <p>Rapid preview for service review. This page demonstrates what users see **before** creating an account.</p>
+
+    <div class="card" style="margin-top:12px">
+      <p style="margin:0 0 6px;opacity:1"><strong>Core student flow</strong></p>
+      <p>Funding Gap → Solutions (Grants/Loans/Savings) → Apply or Concierge → Record & Renewal.</p>
+      <div style="margin-top:6px">
+        <span class="pill">Award Letter OCR → Re-Gap</span>
+        <span class="pill">Scholarship Radar</span>
+        <span class="pill">Work-Study Offset</span>
+        <span class="pill">Residency · 2+2 · Payment Plan</span>
+        <span class="pill">Renewal Coach</span>
+        <span class="pill">Financing Ledger</span>
+      </div>
+      <a class="cta" href="mailto:ops@edurius.com?subject=Edurius%20Preview%20Contact">Contact Ops</a>
+      <p class="footer">For external review only. No student PII is collected on this preview page.</p>
+    </div>
+
+    <div class="footer">
+      © Edurius, Inc. • 150 Garret Way, Port Matilda, PA 16870 • <a href="mailto:ops@edurius.com">ops@edurius.com</a>
+    </div>
   </div>
 </body>
 </html>
